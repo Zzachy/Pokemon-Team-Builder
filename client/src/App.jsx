@@ -242,7 +242,6 @@ function PokemonList() {
         fetch('https://pokemon-team-builder-production.up.railway.app/api/pokemon')
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 setPokemonList(data);
             });
     }, []);
