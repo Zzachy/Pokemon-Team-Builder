@@ -239,7 +239,7 @@ function PokemonList() {
     const [team, setTeam] = useState(Array(6).fill(EMPTY_SLOT));
 
     useEffect(() => {
-        fetch('http://localhost:3000/api/pokemon')
+        fetch('pokemon-team-builder-production.up.railway.app')
             .then(res => res.json())
             .then(data => {
                 console.log(data);
